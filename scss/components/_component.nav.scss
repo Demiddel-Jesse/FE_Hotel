@@ -1,0 +1,32 @@
+@use '../variables/variables.fontweight' as fw;
+@use '../variables/variables.colors' as color;
+
+.c-nav {
+	display: flex;
+	padding: 1rem 0 0 0;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+		margin-bottom: 0;
+	}
+
+	&__link {
+		color: color.$neutral-00;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-left: 3.125rem;
+
+		&:hover {
+			color: color.$neutral-00;
+		}
+	}
+}
