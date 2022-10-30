@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="assets/svg/favicon.svg" type="image/x-icon" />
 	</head>
 	<body>
-		<header class="c-header">
+		<div class="c-nav__container col-12">
 			<div class="container">
 				<nav class="c-nav">
 					<div>
@@ -51,30 +51,41 @@
 						</li>
 					</ul>
 				</nav>
-				<section class="c-header__text">
+			</div>
+		</div>
+		<header class="c-header">
+			<section class="c-header__text col-12">
+				<div class="container">
 					<h1>
 						The best hotel <br />
 						you will ever need
 					</h1>
 					<p class="col-4">Wander through lush English gardens, ride horseback along the rolling hills, or unwind in our Zen-like spa.</p>
-				</section>
-				<div class="c-search">
-					<button class="c-search__arrow--left">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.828" viewBox="0 0 16 16.828">
-							<g transform="translate(20 20.414) rotate(180)">
-								<line x2="14" transform="translate(5 12)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-								<path d="M12,5l7,7-7,7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-							</g>
-						</svg>
-					</button>
-					<button class="c-search__arrow--right">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.828" viewBox="0 0 16 16.828">
-							<g transform="translate(-4 -3.586)">
-								<line x2="14" transform="translate(5 12)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-								<path d="M12,5l7,7-7,7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-							</g>
-						</svg>
-					</button>
+				</div>
+			</section>
+		</header>
+		<main>
+			<!-- search section overlapped on top of the header -->
+			<div class="c-search col-12">
+				<div class="container">
+					<div class="d-flex justify-content-end">
+						<button class="c-search__arrow--left">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.828" viewBox="0 0 16 16.828">
+								<g transform="translate(20 20.414) rotate(180)">
+									<line x2="14" transform="translate(5 12)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+									<path d="M12,5l7,7-7,7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="c-search__arrow--right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.828" viewBox="0 0 16 16.828">
+								<g transform="translate(-4 -3.586)">
+									<line x2="14" transform="translate(5 12)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+									<path d="M12,5l7,7-7,7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+					</div>
 					<div class="c-search__search col-12">
 						<div class="c-search__form col-3 offset-1">
 							<label>
@@ -105,6 +116,6 @@
 					</div>
 				</div>
 			</div>
-		</header>
+		</main>
 	</body>
 </html>
