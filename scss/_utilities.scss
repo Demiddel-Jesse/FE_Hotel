@@ -1,0 +1,25 @@
+@use './variables/variables.fontweight' as fw;
+@use './variables/variables.colors' as color;
+
+// overline text for most headers
+.u-overline {
+	font-weight: fw.$bold;
+	text-transform: uppercase;
+
+	color: color.$primary-500;
+}
+
+// to easily change the color of something to the base neutral color
+.u-color__neutral-00 {
+	color: color.$neutral-00;
+}
+
+// to easily change the color of something to the darkest neutral color
+.u-color__neutral-800 {
+	color: color.$neutral-800;
+}
+
+// to easily change the color of something to the base primary color
+.u-color__primary-500 {
+	color: color.$primary-500;
+}
