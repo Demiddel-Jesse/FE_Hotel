@@ -32,3 +32,9 @@ h1,
 h2 {
 	font-weight: fw.$extraBold;
 }
+
+button {
+	background-color: color.$primary-500;
+	border: none;
+	color: color.$neutral-00;
+}
