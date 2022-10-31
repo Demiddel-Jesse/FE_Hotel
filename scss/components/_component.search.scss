@@ -22,8 +22,6 @@
 
 		&--right {
 			@extend .c-search__arrow;
-
-			background-color: color.$primary-500;
 		}
 	}
 
@@ -61,9 +59,7 @@
 	}
 
 	&__btn {
-		border: none;
 		width: 51px;
 		height: 51px;
-		background-color: color.$primary-500;
 	}
 }

@@ -1,0 +1,32 @@
+@use '../variables/variables.fontweight' as fw;
+@use '../variables/variables.colors' as color;
+
+.c-about {
+	margin-top: 90px;
+	margin-bottom: 90px;
+
+	&__text {
+		> * {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__images {
+		margin-top: 0 !important;
+
+		> div.col-6 {
+			margin-top: 0 !important;
+		}
+	}
+
+	&__button {
+		width: 184px;
+		height: 50px;
+
+		margin-top: 10px;
+
+		> svg {
+			margin-left: 9px;
+		}
+	}
+}
