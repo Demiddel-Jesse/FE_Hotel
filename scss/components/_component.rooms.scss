@@ -1,0 +1,44 @@
+@use '../variables/variables.fontweight' as fw;
+@use '../variables/variables.colors' as color;
+
+.c-rooms {
+	margin-top: 103px;
+	margin-bottom: 101px;
+
+	&__item {
+		background-color: color.$neutral-100;
+
+		margin-bottom: 1rem;
+
+		&Text {
+			> p {
+				&:nth-child(2) {
+					font-size: 1.125rem;
+					line-height: 1.6875rem;
+
+					font-weight: fw.$semiBold;
+
+					margin-bottom: 10px;
+				}
+
+				&:nth-child(3) {
+					font-weight: fw.$medium;
+
+					color: color.$neutral-600;
+
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		position: relative;
+
+		left: 23px;
+		bottom: -65px;
+
+		width: 60px;
+		height: 60px;
+	}
+}
