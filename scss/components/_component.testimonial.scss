@@ -1,0 +1,83 @@
+@use '../variables/variables.fontweight' as fw;
+@use '../variables/variables.colors' as color;
+
+.c-testimonials {
+	background-color: color.$neutral-100;
+
+	height: 487px;
+
+	display: flex;
+	align-items: center;
+
+	&__img {
+		position: relative;
+
+		> img {
+			position: absolute;
+			right: 0;
+			top: calc(-487px / 2);
+		}
+	}
+
+	&__profile {
+		margin-top: 30px;
+		margin-bottom: 20px;
+
+		div {
+			p {
+				font-weight: fw.$semiBold;
+				font-size: 1.125rem;
+				line-height: 1.6875rem;
+				margin-bottom: 0;
+
+				&:nth-child(2) {
+					opacity: 50%;
+					font-size: 0.875rem;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__selector {
+		background-color: color.$neutral-400;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-right: 2px;
+
+		&--active {
+			background-color: color.$primary-500;
+		}
+	}
+
+	&__arrow {
+		width: 51px;
+		height: 51px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+
+		&--left {
+			@extend .c-testimonials__arrow;
+
+			background-color: color.$primary-500;
+		}
+
+		&--right {
+			@extend .c-testimonials__arrow;
+
+			background-color: color.$neutral-00;
+		}
+	}
+
+	&__arrowcontainer {
+		position: relative;
+		top: -51px;
+		left: -531px;
+
+		margin-bottom: -51px;
+	}
+}
