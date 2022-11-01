@@ -2,11 +2,15 @@
 @use '../variables/variables.colors' as color;
 
 .c-contact {
+	margin-bottom: 102px;
+
 	&__heading {
 		margin-bottom: 50px;
 	}
 
 	&__form {
+		margin-bottom: 50px;
+
 		textarea {
 			resize: none;
 
@@ -72,5 +76,44 @@
 		width: fit-content;
 
 		color: color.$neutral-500;
+	}
+
+	&__item {
+		text-align: center;
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		> p {
+			font-size: 1.125rem;
+			line-height: 1.6875rem;
+
+			font-weight: fw.$semiBold;
+
+			margin-bottom: 10px;
+
+			&:nth-child(3) {
+				font-weight: fw.$medium;
+
+				color: color.$neutral-600;
+
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+
+		background-color: color.$primary-500;
+		border-radius: 50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin-bottom: 1rem;
 	}
 }
