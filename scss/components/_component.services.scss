@@ -1,0 +1,58 @@
+@use '../variables/variables.fontweight' as fw;
+@use '../variables/variables.colors' as color;
+
+.c-services {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/servicesBG.png);
+
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+	&__text {
+		margin-bottom: 34px;
+
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+	&__item {
+		background-color: color.$neutral-00;
+
+		text-align: center;
+
+		height: 260px;
+		width: 260px;
+		padding: 0 !important;
+	}
+	&__icon {
+		width: 59px;
+		height: 58px;
+
+		margin-top: 27px;
+		margin-bottom: 15px;
+
+		background-color: color.$primary-500;
+
+		border-radius: 50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__itemtext {
+		> p:nth-child(1) {
+			font-size: 1.125rem;
+			line-height: 27px;
+			font-weight: fw.$semiBold;
+			color: color.$neutral-800;
+
+			margin-bottom: 20px;
+		}
+
+		> p:nth-child(2) {
+			font-size: 0.875rem;
+			line-height: 1.3125rem;
+			font-weight: fw.$medium;
+			color: color.$neutral-600;
+		}
+	}
+}
